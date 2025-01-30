@@ -2,7 +2,7 @@
   "name": "care-plus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://your-username.github.io/your-repo-name",
+  "homepage": "https://andy5703.github.io/pet-care-plus",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
