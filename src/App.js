@@ -1,4 +1,5 @@
 import './App.scss';
+import ProductCategory from "./assets/components/ProductCategory";
 
 import searchIcon from "./assets/images/search.svg"
 import profileIcon from './assets/images/profile.svg'
@@ -11,6 +12,7 @@ import HeroRightImage1 from './assets/images/hero-right1.jpg'
 import HeroRightImage2 from './assets/images/hero-right2.jpg'
 import IcHero from './assets/images/ic-hero.svg'
 import PetFood from './assets/images/pet-food-bag.jpg'
+import BowlDogFood from './assets/images/bowl-dog-food.jpg'
 
 function App() {
     return (
@@ -93,7 +95,22 @@ function App() {
                     </div>
                 </div>
             </header>
-            <main></main>
+            <main>
+                <div className="shopby-category">
+                    <div className='heading'>Browse by Category</div>
+                    <div className="product-categories">
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                    </div>
+                </div>
+            </main>
+            <footer></footer>
         </div>
     );
 }
