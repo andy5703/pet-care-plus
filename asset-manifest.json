@@ -1,9 +1,19 @@
 {
   "files": {
-    "main.css": "/pet-care-plus/static/css/main.2fe3445c.css",
-    "main.js": "/pet-care-plus/static/js/main.dac6d5b8.js",
+    "main.css": "/pet-care-plus/static/css/main.bd62aa0c.css",
+    "main.js": "/pet-care-plus/static/js/main.95c1208c.js",
     "static/js/488.37442423.chunk.js": "/pet-care-plus/static/js/488.37442423.chunk.js",
-    "static/media/bowl-dog-food.jpg": "/pet-care-plus/static/media/bowl-dog-food.72d660d72cfeba5f0f9e.jpg",
+    "static/media/bowl-dog-food.png": "/pet-care-plus/static/media/bowl-dog-food.55d6bcb07ca60c7a7fb7.png",
+    "static/media/pet-vitamins.png": "/pet-care-plus/static/media/pet-vitamins.e7cbbee857e3880b37e6.png",
+    "static/media/tropical-mix-food.png": "/pet-care-plus/static/media/tropical-mix-food.96046bac6250e685e52c.png",
+    "static/media/dog-grooming.png": "/pet-care-plus/static/media/dog-grooming.0896b86063cdd399ebb0.png",
+    "static/media/dog-toy1.png": "/pet-care-plus/static/media/dog-toy1.8dbe68aa620533e74317.png",
+    "static/media/dog-treats.png": "/pet-care-plus/static/media/dog-treats.8841b843b604caefe544.png",
+    "static/media/birdcage.png": "/pet-care-plus/static/media/birdcage.6c808ab070a07ace187b.png",
+    "static/media/leash.png": "/pet-care-plus/static/media/leash.d49058b52b448ebc9b5c.png",
+    "static/media/pet-costume.png": "/pet-care-plus/static/media/pet-costume.eadfbd68adc47fe39c6f.png",
+    "static/media/pet-litter2.png": "/pet-care-plus/static/media/pet-litter2.69bd2169046f4d594b3d.png",
+    "static/media/about-info-image.jpg": "/pet-care-plus/static/media/about-info-image.2986f5b666988dbfaf50.jpg",
     "static/media/hero-right2.jpg": "/pet-care-plus/static/media/hero-right2.a04aa5971215197d4819.jpg",
     "static/media/hero-right1.jpg": "/pet-care-plus/static/media/hero-right1.d348fcba941aa57114e3.jpg",
     "static/media/ic-hero.svg": "/pet-care-plus/static/media/ic-hero.52c9d544369a35ed79e4159b7c2eb48c.svg",
@@ -11,13 +21,16 @@
     "static/media/profile.svg": "/pet-care-plus/static/media/profile.9ada0708740037cce5427e3468c32ffb.svg",
     "static/media/search.svg": "/pet-care-plus/static/media/search.58dafd72835cbc224163174b0ef3e386.svg",
     "index.html": "/pet-care-plus/index.html",
+    "static/media/arrow-right2.svg": "/pet-care-plus/static/media/arrow-right2.44d74e94b10be9601e725b83471a5092.svg",
+    "static/media/check.svg": "/pet-care-plus/static/media/check.4ead34ca47389230f9d3709d0b6d76c3.svg",
+    "static/media/arrow-right-top.svg": "/pet-care-plus/static/media/arrow-right-top.057faab9516ff75d7f7fccfab2692052.svg",
     "static/media/cart.svg": "/pet-care-plus/static/media/cart.ca744eedb56985e795a2bc702bc07995.svg",
-    "main.2fe3445c.css.map": "/pet-care-plus/static/css/main.2fe3445c.css.map",
-    "main.dac6d5b8.js.map": "/pet-care-plus/static/js/main.dac6d5b8.js.map",
+    "main.bd62aa0c.css.map": "/pet-care-plus/static/css/main.bd62aa0c.css.map",
+    "main.95c1208c.js.map": "/pet-care-plus/static/js/main.95c1208c.js.map",
     "488.37442423.chunk.js.map": "/pet-care-plus/static/js/488.37442423.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fe3445c.css",
-    "static/js/main.dac6d5b8.js"
+    "static/css/main.bd62aa0c.css",
+    "static/js/main.95c1208c.js"
   ]
 }
