@@ -1,5 +1,6 @@
 import './App.scss';
 import ProductCategory from "./assets/components/ProductCategory";
+import Product from "./assets/components/Product";
 
 import searchIcon from "./assets/images/search.svg"
 import profileIcon from './assets/images/profile.svg'
@@ -13,7 +14,6 @@ import HeroRightImage2 from './assets/images/hero-right2.jpg'
 import IcHero from './assets/images/ic-hero.svg'
 import PetFood from './assets/images/pet-food-bag.jpg'
 import BowlDogFood from './assets/images/bowl-dog-food.png'
-// import Pets from './assets/images/pets.png'
 import PetSnack from './assets/images/dog-treats.png'
 import Litter from './assets/images/pet-litter2.png'
 import DogToy1 from './assets/images/dog-toy1.png'
@@ -21,6 +21,7 @@ import Leash from './assets/images/leash.png'
 import DogCostume from './assets/images/pet-costume.png'
 import DogGrooming from './assets/images/dog-grooming.png'
 import PetVitamins from './assets/images/pet-vitamins.png'
+import TropicalFood from './assets/images/tropical-mix-food.png'
 
 function App() {
     return (
@@ -115,6 +116,19 @@ function App() {
                         <ProductCategory image={DogCostume} title='Clothing & Accessories' message='Stylish, comfortable, and functional wear..'/>
                         <ProductCategory image={DogGrooming} title='Grooming & Hygiene' message='Keeps pets clean, healthy, and fresh..'/>
                         <ProductCategory image={PetVitamins} title='Suplements & Vitamins' message='Boosts health, energy, and immunity.'/>
+                    </div>
+                </div>
+                <div className="products-list">
+                    <div className="heading">Latest Products</div>
+                    <div className="products">
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
                     </div>
                 </div>
             </main>
