@@ -61,7 +61,7 @@ const HomePage = () => {
                         <p className='p1'>From bowls to beds, we've got it all.</p>
                         <p className='p2'>Summer Deal 20% Off</p>
                     </div>
-                    <h1 className='title'>Care Plus</h1>
+                    <h1 className='title'>About</h1>
                     <ul className='navbar-center'>
                         <li className="nav-link" onClick={() => navigate("/")}>Home</li>
                         <li className="nav-link" onClick={() => navigate("/about")}>About</li>
