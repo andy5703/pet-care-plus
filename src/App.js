@@ -24,6 +24,27 @@ import PetVitamins from './assets/images/pet-vitamins.png'
 import TropicalFood from './assets/images/tropical-mix-food.png'
 
 function App() {
+    const productCategories = [
+        {image: BowlDogFood, title: 'Pet Food', message: 'Healthy food.'},
+        {image: PetSnack, title: 'Pet Treats', message: 'Tasty Canine Delights.'},
+        {image: Litter, title: 'Litter Care', message: 'Fresh Environment.'},
+        {image: DogToy1, title: 'Toys & Entertainment', message: 'Fun, interactive, and engaging toys.'},
+        {image: Leash, title: 'Collars, Leashes & Harnesses', message: 'Secure, stylish, and comfortable gear.'},
+        {image: DogCostume, title: 'Clothing & Accessories', message: 'Stylish, comfortable, and functional wear.'},
+        {image: DogGrooming, title: 'Grooming & Hygiene', message: 'Keeps pets clean, healthy, and fresh.'},
+        {image: PetVitamins, title: 'Supplements & Vitamins', message: 'Boosts health, energy, and immunity.'}
+    ];
+
+    const products = [
+        { image: TropicalFood, title: 'Egg Food Blend', price: 200 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: TropicalFood, title: 'Egg Food Blend', price: 168 }
+    ];
     return (
         <div className="App">
             <header>
@@ -108,27 +129,27 @@ function App() {
                 <div className="shopby-category">
                     <div className='heading'>Browse by Category</div>
                     <div className="product-categories">
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={PetSnack} title='Pet Treats' message='Tasty Canine Delights.'/>
-                        <ProductCategory image={Litter} title='Litter Care' message='Fresh Environment.'/>
-                        <ProductCategory image={DogToy1} title='Toys & Entertainment' message='Fun, interactive, and engaging toys.'/>
-                        <ProductCategory image={Leash} title='Collars, Leashes & Harnesses' message='Secure, stylish, and comfortable gear.'/>
-                        <ProductCategory image={DogCostume} title='Clothing & Accessories' message='Stylish, comfortable, and functional wear..'/>
-                        <ProductCategory image={DogGrooming} title='Grooming & Hygiene' message='Keeps pets clean, healthy, and fresh..'/>
-                        <ProductCategory image={PetVitamins} title='Suplements & Vitamins' message='Boosts health, energy, and immunity.'/>
+                        {productCategories.map((category, index) => (
+                            <ProductCategory
+                                key={index}
+                                image={category.image}
+                                title={category.title}
+                                message={category.message}
+                            />
+                        ))}
                     </div>
                 </div>
                 <div className="products-list">
                     <div className="heading">Latest Products</div>
                     <div className="products">
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
-                        <Product image={TropicalFood} title='Egg Food Blend' price='168.00'/>
+                        {products.map((product, index) => (
+                            <Product
+                                key={index}
+                                image={product.image}
+                                title={product.title}
+                                price={product.price}
+                            />
+                        ))}
                     </div>
                 </div>
             </main>
