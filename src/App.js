@@ -22,8 +22,13 @@ import DogCostume from './assets/images/pet-costume.png'
 import DogGrooming from './assets/images/dog-grooming.png'
 import PetVitamins from './assets/images/pet-vitamins.png'
 import TropicalFood from './assets/images/tropical-mix-food.png'
+import BirdCage from './assets/images/birdcage.png'
+import Check from './assets/images/check.svg'
+import ArrowRightTop from './assets/images/arrow-right-top.svg'
+import AboutInfoImage from './assets/images/about-info-image.jpg'
+import ArrowRight2 from './assets/images/arrow-right2.svg'
 
-function App() {
+const App = () => {
     const productCategories = [
         {image: BowlDogFood, title: 'Pet Food', message: 'Healthy food.'},
         {image: PetSnack, title: 'Pet Treats', message: 'Tasty Canine Delights.'},
@@ -34,10 +39,9 @@ function App() {
         {image: DogGrooming, title: 'Grooming & Hygiene', message: 'Keeps pets clean, healthy, and fresh.'},
         {image: PetVitamins, title: 'Supplements & Vitamins', message: 'Boosts health, energy, and immunity.'}
     ];
-
     const products = [
         { image: TropicalFood, title: 'Egg Food Blend', price: 200 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
+        { image: BirdCage, title: 'Bird Cage', price: 168 },
         { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
         { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
         { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
@@ -150,6 +154,56 @@ function App() {
                                 price={product.price}
                             />
                         ))}
+                    </div>
+                </div>
+                <div className="about-care-plus">
+                    <div className="cover-photo">
+                        <img src={AboutInfoImage} alt="#"/>
+                    </div>
+                    <div className="about-info">
+                        <div className="title">About CarePlus.</div>
+                        <div className="description">Our journey began with a simple idea to create a place where pet owners could find everything they need to care for their furry companions, all in one convenient location. Since then, we've grown into a trusted destination.</div>
+                        <div className="about-items">
+                            <div className="about-item">
+                                <img src={Check} alt="#"/>
+                                <div className="item-info">Product Quality</div>
+                            </div>
+                            <div className="about-item">
+                                <img src={Check} alt="#"/>
+                                <div className="item-info">Community Engagement</div>
+                            </div>
+                            <div className="about-item">
+                                <img src={Check} alt="#"/>
+                                <div className="item-info">Ethical Sourcing</div>
+                            </div>
+                            <div className="about-item">
+                                <img src={Check} alt="#"/>
+                                <div className="item-info">Market Expansion</div>
+                            </div>
+                            <div className="about-item">
+                                <img src={Check} alt="#"/>
+                                <div className="item-info">Brand Awareness</div>
+                            </div>
+                        </div>
+                        <button type='button' className='about-btn'>
+                            About us
+                            <img src={ArrowRightTop} alt="#"/>
+                        </button>
+                        <div className="about-bottom">
+                            <div className="about-info-bottom">
+                                <div className="worth-sold">
+                                    <div className="amount">$2M</div>
+                                    <div className="info">Pe product sold worldwide.</div>
+                                </div>
+                                <div className="rating">
+                                    <div className="score">4.8</div>
+                                    <div className="info">Our score rating.</div>
+                                </div>
+                            </div>
+                            <button type='button' className='about-btn-bottom'>
+                                <img src={ArrowRight2} alt="#"/>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </main>
