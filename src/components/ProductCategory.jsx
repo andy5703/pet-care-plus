@@ -1,4 +1,4 @@
-import ArrrowImage from '../images/arrow-right.svg'
+import ArrrowImage from '../assets/images/arrow-right.svg'
 
 const ProductCategory = ({image, title = 'No title', message = 'No message'}) => (
     <div className="product-category">
