@@ -6,6 +6,7 @@ function ProductCategory({image, title = 'No title', message = 'No message'}) {
             <div className="product-image">
                 <img src={image} alt="product-image"/>
             </div>
+            <div className="box"></div>
             <div className="product-info">
                 <div className="product-title">{title}</div>
                 <div className="product-message">{message}</div>

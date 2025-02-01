@@ -12,7 +12,15 @@ import HeroRightImage1 from './assets/images/hero-right1.jpg'
 import HeroRightImage2 from './assets/images/hero-right2.jpg'
 import IcHero from './assets/images/ic-hero.svg'
 import PetFood from './assets/images/pet-food-bag.jpg'
-import BowlDogFood from './assets/images/bowl-dog-food.jpg'
+import BowlDogFood from './assets/images/bowl-dog-food.png'
+// import Pets from './assets/images/pets.png'
+import PetSnack from './assets/images/dog-treats.png'
+import Litter from './assets/images/pet-litter2.png'
+import DogToy1 from './assets/images/dog-toy1.png'
+import Leash from './assets/images/leash.png'
+import DogCostume from './assets/images/pet-costume.png'
+import DogGrooming from './assets/images/dog-grooming.png'
+import PetVitamins from './assets/images/pet-vitamins.png'
 
 function App() {
     return (
@@ -100,13 +108,13 @@ function App() {
                     <div className='heading'>Browse by Category</div>
                     <div className="product-categories">
                         <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
-                        <ProductCategory image={BowlDogFood} title='Pet Food' message='Healty food.'/>
+                        <ProductCategory image={PetSnack} title='Pet Treats' message='Tasty Canine Delights.'/>
+                        <ProductCategory image={Litter} title='Litter Care' message='Fresh Environment.'/>
+                        <ProductCategory image={DogToy1} title='Toys & Entertainment' message='Fun, interactive, and engaging toys.'/>
+                        <ProductCategory image={Leash} title='Collars, Leashes & Harnesses' message='Secure, stylish, and comfortable gear.'/>
+                        <ProductCategory image={DogCostume} title='Clothing & Accessories' message='Stylish, comfortable, and functional wear..'/>
+                        <ProductCategory image={DogGrooming} title='Grooming & Hygiene' message='Keeps pets clean, healthy, and fresh..'/>
+                        <ProductCategory image={PetVitamins} title='Suplements & Vitamins' message='Boosts health, energy, and immunity.'/>
                     </div>
                 </div>
             </main>
