@@ -1,4 +1,5 @@
 import ArrrowImage from '../assets/images/arrow-right.svg'
+import PropTypes from 'prop-types'
 
 const ProductCategory = ({image, title = 'No title', message = 'No message'}) => (
     <div className="product-category">
@@ -15,5 +16,9 @@ const ProductCategory = ({image, title = 'No title', message = 'No message'}) =>
         </button>
     </div>
 );
-
+ProductCategory.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string,
+    message: PropTypes.string
+}
 export default ProductCategory;

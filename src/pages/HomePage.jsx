@@ -27,6 +27,7 @@ import AboutInfoImage from '../assets/images/about-info-image.jpg'
 import ArrowRight2 from '../assets/images/arrow-right2.svg'
 import ProductCategory from "../components/ProductCategory";
 import Product from "../components/Product";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -66,10 +67,10 @@ const HomePage = () => {
                         <li className="nav-link" onClick={() => navigate("/")}>Home</li>
                         <li className="nav-link" onClick={() => navigate("/about")}>About</li>
                         <li className="nav-link" onClick={() => navigate("/categories")}>Categories</li>
-                        <li className="nav-link"><a href="#Shop">Shop</a></li>
-                        <li className="nav-link"><a href="#Blogs">Blogs</a></li>
-                        <li className="nav-link"><a href="#Reviews">Reviews</a></li>
-                        <li className="nav-link"><a href="#Contact">Contact</a></li>
+                        <li className="nav-link">Shop</li>
+                        <li className="nav-link">Blogs</li>
+                        <li className="nav-link">Reviews</li>
+                        <li className="nav-link">Contact</li>
                     </ul>
                     <div className="navbar-right">
                         <div className="search"><img src={searchIcon} alt="search"/></div>
@@ -213,7 +214,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </main>
-            <footer></footer>
+            <footer>
+                <Footer/>
+            </footer>
         </div>
     );
 }

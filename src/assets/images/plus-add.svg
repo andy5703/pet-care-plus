@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>.cls-1{fill:#231f20;}</style>
+</defs>
+<g id="plus">
+<path class="cls-1" d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/>
+<path class="cls-1" d="M16,29a1,1,0,0,1-1-1V4a1,1,0,0,1,2,0V28A1,1,0,0,1,16,29Z"/>
+</g>
+</svg>
