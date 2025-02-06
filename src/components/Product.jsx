@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 const Product = ({image, title = 'No title', price}) => {
     return (
         <div className="product">
@@ -11,5 +13,9 @@ const Product = ({image, title = 'No title', price}) => {
         </div>
     );
 }
-
+Product.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string,
+    price: PropTypes.number,
+}
 export default Product;

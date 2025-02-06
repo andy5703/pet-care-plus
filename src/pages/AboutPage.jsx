@@ -3,56 +3,31 @@ import {useNavigate} from "react-router-dom";
 import searchIcon from "../assets/images/search.svg"
 import profileIcon from '../assets/images/profile.svg'
 import cartIcon from '../assets/images/cart.svg'
-import HfImage1 from '../assets/images/hf-img1.jpg'
-import HfImage2 from '../assets/images/hf-img2.jpg'
-import HfImage3 from '../assets/images/hf-img3.jpg'
-import HfImage4 from '../assets/images/hf-img4.jpg'
-import HeroRightImage1 from '../assets/images/hero-right1.jpg'
-import HeroRightImage2 from '../assets/images/hero-right2.jpg'
-import IcHero from '../assets/images/ic-hero.svg'
-import PetFood from '../assets/images/pet-food-bag.jpg'
-import BowlDogFood from '../assets/images/bowl-dog-food.png'
-import PetSnack from '../assets/images/dog-treats.png'
-import Litter from '../assets/images/pet-litter2.png'
-import DogToy1 from '../assets/images/dog-toy1.png'
-import Leash from '../assets/images/leash.png'
-import DogCostume from '../assets/images/pet-costume.png'
-import DogGrooming from '../assets/images/dog-grooming.png'
-import PetVitamins from '../assets/images/pet-vitamins.png'
-import TropicalFood from '../assets/images/tropical-mix-food.png'
-import BirdCage from '../assets/images/birdcage.png'
-import Check from '../assets/images/check.svg'
-import ArrowRightTop from '../assets/images/arrow-right-top.svg'
-import AboutInfoImage from '../assets/images/about-info-image.jpg'
-import ArrowRight2 from '../assets/images/arrow-right2.svg'
-import ProductCategory from "../components/ProductCategory";
-import Product from "../components/Product";
+import jwImage from '../assets/images/dogs-smelling.jpg'
+import petImage from '../assets/images/cute-dog.jpg'
+import PurposeImage from '../assets/images/purpose-image.jpg'
+import Dog1 from '../assets/images/dog1.png'
+import Dog2 from '../assets/images/dog2.png'
+import HatDog from '../assets/images/hat-dog.jpg'
+import ArrowDown from '../assets/images/arrow-down.svg'
+import CuteDog2 from '../assets/images/cute-dog2.jpg'
+import CuteDog3 from '../assets/images/cute-dog3.jpg'
+import CuteDog4 from '../assets/images/cute-dog4.jpg'
+import Student from '../assets/images/student.jpg'
+import PlusSign from '../assets/images/plus-add.svg'
 
-const HomePage = () => {
+import ImageCarousel from "../components/ImageCarousel";
+import Footer from "../components/Footer";
+import PetArticle from "../components/PetArticle";
+
+const AboutPage = () => {
     const navigate = useNavigate();
 
-    const productCategories = [
-        {image: BowlDogFood, title: 'Pet Food', message: 'Healthy food.'},
-        {image: PetSnack, title: 'Pet Treats', message: 'Tasty Canine Delights.'},
-        {image: Litter, title: 'Litter Care', message: 'Fresh Environment.'},
-        {image: DogToy1, title: 'Toys & Entertainment', message: 'Fun, interactive, and engaging toys.'},
-        {image: Leash, title: 'Collars, Leashes & Harnesses', message: 'Secure, stylish, and comfortable gear.'},
-        {image: DogCostume, title: 'Clothing & Accessories', message: 'Stylish, comfortable, and functional wear.'},
-        {image: DogGrooming, title: 'Grooming & Hygiene', message: 'Keeps pets clean, healthy, and fresh.'},
-        {image: PetVitamins, title: 'Supplements & Vitamins', message: 'Boosts health, energy, and immunity.'}
+    const articles = [
+        {image: CuteDog2, title: 'The power of play why regular exercise is essential for your pets health', message: 'Learn about fun and effective ways to incorporate play into your pets daily routine, ensuring they stay active, stimulated, and full of energy.'},
+        {image: CuteDog3, title: 'Understanding pet behavior insights into your furry friend\'s actions', message: 'Learn to decode their body language, interpret their vocalizations, and understand the underlying reasons behind their behaviors.'},
+        {image: CuteDog4, title: 'Traveling with pets made easy essential tips for stress-free journeys', message: 'Learn how to prepare for trips, whether by car, plane, or train, and discover strategies for keeping your pet comfortable & calm throughout the journey.'}
     ];
-
-    const products = [
-        { image: TropicalFood, title: 'Egg Food Blend', price: 200 },
-        { image: BirdCage, title: 'Bird Cage', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 },
-        { image: TropicalFood, title: 'Egg Food Blend', price: 168 }
-    ];
-
     return (
         <div className="App">
             <header>
@@ -61,15 +36,15 @@ const HomePage = () => {
                         <p className='p1'>From bowls to beds, we've got it all.</p>
                         <p className='p2'>Summer Deal 20% Off</p>
                     </div>
-                    <h1 className='title'>About</h1>
+                    <h1 className='title'>Care Plus</h1>
                     <ul className='navbar-center'>
                         <li className="nav-link" onClick={() => navigate("/")}>Home</li>
                         <li className="nav-link" onClick={() => navigate("/about")}>About</li>
                         <li className="nav-link" onClick={() => navigate("/categories")}>Categories</li>
-                        <li className="nav-link"><a href="#Shop">Shop</a></li>
-                        <li className="nav-link"><a href="#Blogs">Blogs</a></li>
-                        <li className="nav-link"><a href="#Reviews">Reviews</a></li>
-                        <li className="nav-link"><a href="#Contact">Contact</a></li>
+                        <li className="nav-link">Shop</li>
+                        <li className="nav-link">Blogs</li>
+                        <li className="nav-link">Reviews</li>
+                        <li className="nav-link">Contact</li>
                     </ul>
                     <div className="navbar-right">
                         <div className="search"><img src={searchIcon} alt="search"/></div>
@@ -80,142 +55,187 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="hero-wrap">
-                    <div className="hero-left">
-                        <div>
-                            <h1 className='hero-title'>Where every pets finds comfort and joy!</h1>
-                            <button className='hero-btn' type='button'>View Collection</button>
-                        </div>
-                        <div className="hero-facts">
-                            <div className="hf-block-left">
-                                <h1>$2M</h1>
-                                <p>Over $5 million in pet products sold worldwide.</p>
-                            </div>
-                            <div className="hf-block-right">
-                                <h1>96%</h1>
-                                <p>Our customers report satisfaction with our products.</p>
-                                <div>
-                                    <img src={HfImage1} alt="#"/>
-                                    <img src={HfImage2} alt="#"/>
-                                    <img src={HfImage3} alt="#"/>
-                                    <img src={HfImage4} alt="#"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="hero-right">
-                        <div className="hero-top">
-                            <div className="hero-image1">
-                                <img src={HeroRightImage1} alt="#"/>
-                            </div>
-                            <div className="hero-image2">
-                                <img src={HeroRightImage2} alt="#"/>
-                            </div>
-                        </div>
-                        <div className="hero-bottom">
-                            <div className="hero-thumb"></div>
-                            <div className="best-seller">
-                                <div className="bs-left">
-                                    <img src={IcHero} alt="#"/>
-                                    <p>Best Seller Product</p>
-                                </div>
-                                <div className="bs-right">
-                                    <div className="bs-img">
-                                        <img src={PetFood} alt="#"/>
-                                    </div>
-                                    <div className="bs-line"></div>
-                                    <div className="bs-data">
-                                        <p className='p1'>PetPedicure Nail Clippers</p>
-                                        <p className='p2'>Your solution to maintaining your pet's paw perfection.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </header>
-            <main>
-                <div className="shopby-category">
-                    <div className='heading'>Browse by Category</div>
-                    <div className="product-categories">
-                        {productCategories.map((category, index) => (
-                            <ProductCategory
-                                key={index}
-                                image={category.image}
-                                title={category.title}
-                                message={category.message}
-                            />
-                        ))}
-                    </div>
+            <main className='about-page-main'>
+                <div className="title">About us</div>
+                <div className="description">
+                    Our journey began with a shared love for animals and a desire to make a difference in the lives of
+                    pets everywhere. What started as a small venture has grown into a thriving community.
                 </div>
-                <div className="products-list">
-                    <div className="heading">Latest Products</div>
-                    <div className="products">
-                        {products.map((product, index) => (
-                            <Product
-                                key={index}
-                                image={product.image}
-                                title={product.title}
-                                price={product.price}
-                            />
-                        ))}
-                    </div>
+                <div className="wrap-img">
+                    <ImageCarousel/>
                 </div>
-                <div className="about-care-plus">
-                    <div className="cover-photo">
-                        <img src={AboutInfoImage} alt="#"/>
+                <div className="jw-wrap">
+                    <div className="jw-image">
+                        <img src={jwImage} alt=""/>
                     </div>
-                    <div className="about-info">
-                        <div className="title">About CarePlus.</div>
-                        <div className="description">Our journey began with a simple idea to create a place where pet owners could find everything they need to care for their furry companions, all in one convenient location. Since then, we've grown into a trusted destination.</div>
-                        <div className="about-items">
-                            <div className="about-item">
-                                <img src={Check} alt="#"/>
-                                <div className="item-info">Product Quality</div>
+                    <div className="jw-info">
+                        <div className="jw-top">
+                            <div className="jw-title">Our journey</div>
+                            <p>Our journey began with a simple yet profound love for animals a love that ignited our
+                                passion to make a difference in the lives of pets and their devoted owners.</p>
+                            <p>From the very beginning, our mission has been clear to provide pets with the love, care,
+                                and attention.</p>
+                        </div>
+                        <div className="jw-bottom">
+                            <div className="jw-block">
+                                <div className="jw-block-info">
+                                    <div className="jw-bottom-info">12</div>
+                                    <div className='jw-bottom-subinfo'>Years of Experience</div>
+                                </div>
+                                <div className='jw-bottom-description'>Established in 2013. Based on London</div>
                             </div>
-                            <div className="about-item">
-                                <img src={Check} alt="#"/>
-                                <div className="item-info">Community Engagement</div>
-                            </div>
-                            <div className="about-item">
-                                <img src={Check} alt="#"/>
-                                <div className="item-info">Ethical Sourcing</div>
-                            </div>
-                            <div className="about-item">
-                                <img src={Check} alt="#"/>
-                                <div className="item-info">Market Expansion</div>
-                            </div>
-                            <div className="about-item">
-                                <img src={Check} alt="#"/>
-                                <div className="item-info">Brand Awareness</div>
+                            <div className="jw-block">
+                                <div className="jw-block-info">
+                                    <div className="jw-bottom-info">96%</div>
+                                    <div className='jw-bottom-subinfo'>Client Satisfaction</div>
+                                </div>
+                                <div className='jw-bottom-description'>Our commitment to excellence speaks volumes.
+                                </div>
                             </div>
                         </div>
-                        <button type='button' className='about-btn'>
-                            About us
-                            <img src={ArrowRightTop} alt="#"/>
-                        </button>
-                        <div className="about-bottom">
-                            <div className="about-info-bottom">
-                                <div className="worth-sold">
-                                    <div className="amount">$2M</div>
-                                    <div className="info">Pe product sold worldwide.</div>
-                                </div>
-                                <div className="line-space"></div>
-                                <div className="rating">
-                                    <div className="score">4.8</div>
-                                    <div className="info">Our score rating.</div>
+                    </div>
+                </div>
+                <div className="section-wrap">
+                    <div className="section-data">
+                        <div className="section-info">
+                            <div className="section-title">Creating harmony between pets and people</div>
+                            <div className="section-title">Fostering stronger pet-owner connections</div>
+                            <div className="section-title">Advocating for trustworty pet solutions</div>
+                        </div>
+                        <button className="section-btn" type='button'>Contact us</button>
+                    </div>
+                    <div className="section-image">
+                        <img src={petImage} alt=""/>
+                    </div>
+                </div>
+                <div className="purpose-section">
+                    <div className="ps-image">
+                        <img src={PurposeImage} alt=""/>
+                    </div>
+                    <div className="ps-data">
+                        <div className="ps-data-title">
+                            Inspiring pet wellness guided by passion and defined by purpose
+                        </div>
+                        <div className="ps-data-info">
+                            We aim to create a world where everyone has access to exceptional eyewear that not only
+                            enhances their vision but also reflects their unique style.
+                        </div>
+                        <div className="ps-data-info">Through relentless innovation and unwavering dedication, we're on
+                            a mission to make premium eyewear accessible to all, empowering individuals to express
+                            themselves with confidence and clarity.
+                        </div>
+                        <button className="ps-data-btn" type='button'>Shop now</button>
+                    </div>
+                </div>
+                <div className="shopnow-section">
+                    <div className="shopnow">
+                        <div className="shopnow-title">Last chance to save shop our limited time offers now!</div>
+                        <button className="shopnow-btn">Shop now</button>
+                    </div>
+                    <img className='dog-1' src={Dog1} alt=""/>
+                    <img className='dog-2' src={Dog2} alt=""/>
+                </div>
+                <div className="provide-section">
+                    <div className="provide-title">
+                        What we provide
+                    </div>
+                    <div className="provide-data">
+                        <div className="provide-data-img">
+                            <img src={HatDog} alt=""/>
+                        </div>
+                        <div className="provide-data-info">
+                            <div className="pd-info-toggle">
+                                <div className="pd-info-toggle-title">Pet nutritionist</div>
+                                <div className="pd-info-toggle-icon">
+                                    <img src={ArrowDown} alt=""/>
                                 </div>
                             </div>
-                            <button type='button' className='about-btn-bottom'>
-                                <img src={ArrowRight2} alt="#"/>
-                            </button>
+                            <div className="pd-info-toggle">
+                                <div className="pd-info-toggle-title">Food quality & safety</div>
+                                <div className="pd-info-toggle-icon">
+                                    <img src={ArrowDown} alt=""/>
+                                </div>
+                            </div>
+                            <div className="pd-info-toggle">
+                                <div className="pd-info-toggle-title">Pets health & well-being</div>
+                                <div className="pd-info-toggle-icon">
+                                    <img src={ArrowDown} alt=""/>
+                                </div>
+                            </div>
+                            <div className="pd-info-toggle">
+                                <div className="pd-info-toggle-title">Pets all accessories</div>
+                                <div className="pd-info-toggle-icon">
+                                    <img src={ArrowDown} alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="article-section">
+                    <div className="article-section-title">
+                        Latest articles
+                    </div>
+                    <div className="articles">
+                        {articles.map((article) => (
+                            <PetArticle
+                                image={article.image}
+                                title={article.title}
+                                message={article.message}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className="questioning-section">
+                    <div className="qs-title">Have Any Questions?</div>
+                    <div className="qs-info">
+                        <div className="qs-questions">
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                            <div className="question">
+                                <span className='question-title'>Question 1</span>
+                                <span className="empty-space"></span>
+                                <span className='question-btn'><img src={PlusSign} alt=""/></span>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div className="qs-image">
+                            <img src={Student} alt=""/>
                         </div>
                     </div>
                 </div>
             </main>
-            <footer></footer>
+            <Footer/>
         </div>
     );
 }
 
-export default HomePage;
+export default AboutPage;
