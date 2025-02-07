@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pet-care-plus/static/css/main.2b0668eb.css",
-    "main.js": "/pet-care-plus/static/js/main.7ec5b892.js",
+    "main.js": "/pet-care-plus/static/js/main.2a74c042.js",
     "static/js/488.37442423.chunk.js": "/pet-care-plus/static/js/488.37442423.chunk.js",
     "static/media/bowl-dog-food.png": "/pet-care-plus/static/media/bowl-dog-food.55d6bcb07ca60c7a7fb7.png",
     "static/media/pet-vitamins.png": "/pet-care-plus/static/media/pet-vitamins.e7cbbee857e3880b37e6.png",
@@ -43,11 +43,11 @@
     "static/media/cart.svg": "/pet-care-plus/static/media/cart.ca744eedb56985e795a2bc702bc07995.svg",
     "static/media/plus-add.svg": "/pet-care-plus/static/media/plus-add.bcc2ebd42b95b5fdb5c7c44827bb2a81.svg",
     "main.2b0668eb.css.map": "/pet-care-plus/static/css/main.2b0668eb.css.map",
-    "main.7ec5b892.js.map": "/pet-care-plus/static/js/main.7ec5b892.js.map",
+    "main.2a74c042.js.map": "/pet-care-plus/static/js/main.2a74c042.js.map",
     "488.37442423.chunk.js.map": "/pet-care-plus/static/js/488.37442423.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b0668eb.css",
-    "static/js/main.7ec5b892.js"
+    "static/js/main.2a74c042.js"
   ]
 }
